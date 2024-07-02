@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/grey"
+
+    >
+
+    <ImageView
+        android:layout_width="1500dp"
+        android:layout_height="200dp"
+        android:layout_margin="50dp"
+        android:src="@drawable/meter_removebg_preview"/>
+
+    <TextView
+        android:id="@+id/bmi_text_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"></TextView>
+    <TextView
+        android:id="@+id/bmi_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"></TextView>
+
+    <RadioGroup
+        android:layout_width="221dp"
+        android:layout_height="44dp"
+        android:layout_margin="30dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MALE"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FEMALE"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/age_input_text"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="AGE"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/weight_w"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="WEIGHT IN Kg"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/height_h"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="FEET"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/height_hh"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="INCH"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit_button_text"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Calculate"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_margin="30dp"></Button>
+
+
+   
+
+</LinearLayout>
